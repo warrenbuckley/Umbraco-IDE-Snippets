@@ -6,14 +6,14 @@
         alias: "${1:myFirst.PropertyEditor}",
         name: "${2:My First Property Editor}",         
         editor: {               
-            view: "~/App_Plugins/SirTrevor/SirTrevor.html",
-            hideLabel: true,
-            valueType: "JSON",
-            isReadOnly: false
+            view: "~/App_Plugins/${3:myFirst}/${4:propertyeditor}.html",
+            hideLabel: ${5:true},
+            valueType: "${6:JSON}",
+            isReadOnly: ${7:false}
         }
     ],
     javascript: [
-        '~/App_Plugins/SirTrevor/SirTrevor.controller.js'
+        '~/App_Plugins/${3:myFirst}/${4:propertyeditor}.controller.js'
     ]
 }
 ]]></content>
