@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+{       
+    propertyEditors: [      
+        {
+        alias: "${1:myFirst.PropertyEditor}",
+        name: "${2:My First Property Editor}",         
+        editor: {               
+            view: "~/App_Plugins/SirTrevor/SirTrevor.html",
+            hideLabel: true,
+            valueType: "JSON",
+            isReadOnly: false
+        }
+    ],
+    javascript: [
+        '~/App_Plugins/SirTrevor/SirTrevor.controller.js'
+    ]
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>umbraco-prop-manifest</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
